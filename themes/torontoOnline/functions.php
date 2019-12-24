@@ -12,7 +12,7 @@ add_action('wp_enqueue_scripts', 'torontoOnline_scripts');
 // Add Menus
 
 register_nav_menus(array(
-    'main-menu' => __('Main Menu', 'torontoOnline')
+    'main_menu' => __('Main Menu', 'torontoOnline')
 ));
 
 
