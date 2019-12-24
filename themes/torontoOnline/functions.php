@@ -30,5 +30,9 @@ add_action('widgets_init', 'theme_widgets');
 
 // Add Featured Image
 add_theme_support('post-thumbnails');
+
+//Add Custom image sizes
+add_image_size('featured', 1100, 418, true);
+
 // Hide WP Admin bar
 add_filter('show_admin_bar', '__return_false');
