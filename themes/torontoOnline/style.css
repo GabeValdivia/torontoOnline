@@ -154,6 +154,32 @@ p {
     font-weight: bold;
     margin-top: 20px;
 }
+
+/* Featured Image */
+.featured {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.featured h2 {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background-color: #a00622;
+    color: #fff;
+    padding: 10px 20px 10px 10px;
+    text-transform: lowercase;
+}
+
+h2.noimage {
+    color: #a00622;
+    font-size: 30px;
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px 0;
+    border: 2px solid #a00622;
+}
+
 /* Footer Styles */
 
 footer nav {
