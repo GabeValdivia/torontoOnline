@@ -28,5 +28,7 @@ function theme_widgets(){
 }
 add_action('widgets_init', 'theme_widgets');
 
+// Add Featured Image
+add_theme_support('post-thumbnails');
 // Hide WP Admin bar
 add_filter('show_admin_bar', '__return_false');
