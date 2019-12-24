@@ -17,18 +17,13 @@
                     <img src="<?php echo get_template_directory_uri() ?>/img/logo.svg" alt="torontoOline Logo">
                 </a>
             </div><!-- .logo -->
+
             <nav id="site-navigation" class="main-navigation" role="navigation">
-                <?php 
-                    wp_nav_menu(array(
-                        'theme_location' => 'main_menu'
-                    ));
-                
-                ?>
+                <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
             </nav><!-- nav -->
+
         </div><!-- .container -->
     </header>
     <div class="container content">
     
-    </div>
-</div>
     

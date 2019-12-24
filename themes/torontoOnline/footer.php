@@ -1,13 +1,11 @@
             </div><!-- .container -->
         </div><!-- #page -->
-        <footer class="site-footer">
+        
+        <footer class="site-footer" role="contentinfo">
+
             <nav id="footer-navigation" class="footer-navigation" role="navigation">
                 <?php 
-                    wp_nav_menu(array(
-                        'theme_location' => 'main_menu'
-                    ));
-                
-                ?>
+                    wp_nav_menu(array('theme_location' => 'main_menu' ));?>
             </nav><!-- nav -->
             <hr>
             <div class="copyright">
