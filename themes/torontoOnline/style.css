@@ -418,6 +418,43 @@ ul.blog-visit li .post-information div.date {
     background-color: #80051c;
 }
 
+/* Front Page */
+
+
+/* Latest 2 Entries - Displayed on Front Page */
+
+div.bottom-front-page {
+    clear: both;
+}
+
+div.bottom-front-page h2 {
+    text-align: left;
+    text-transform: lowercase;
+}
+
+div.bottom-front-page li {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div.bottom-front-page h3 {
+    margin: 10px 0;
+}
+
+div.bottom-front-page li a.read-more {
+    font-weight: bold;
+    display: block;
+    text-align: right;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+div.bottom-front-page li p {
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+
 @media only screen and (min-width : 480px) {
     ul.blog-visit li {
         float: left;
@@ -428,15 +465,29 @@ ul.blog-visit li .post-information div.date {
     .category article img {
         float: left;
         width: 40%
-}
+    }
 
     .blog article .content-post,
     .category article .content-post {
         float: left;
         width: 60%;
         padding-left: 20px;
-}
+    }
 
+    /* Home Page */
+
+    /* Latest 2 Entries - Displayed on Front Page */
+
+    div.bottom-front-page div.blog-tips {
+        float: right;
+        width: 70%;
+    }
+
+    div.bottom-front-page li {
+        float: left;
+        width: 50%;
+        padding: 0 10px;
+    }
 }
 
 @media only screen and (min-width : 768px) {
