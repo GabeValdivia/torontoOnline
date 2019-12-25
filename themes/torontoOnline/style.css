@@ -138,13 +138,15 @@ p {
     background-image: url(img/svg_quote.svg);
     background-repeat: no-repeat;
     background-position: left top;
-    padding-left: 86px;
+    padding-left: 28px;
     font-style: italic;
+    opacity: .8;
 }
 
 #testimonials .textwidget p {
-    font-size: 24px;
-    font-size: 2.4rem;
+    font-size: 18px;
+    font-size: 1.8rem;
+    opacity: 1;
 }
 
 #testimonials .textwidget span {
@@ -271,6 +273,32 @@ ul.blog-visit li .post-information div.date {
     font-weight: bold;
 }
 
+/** Single Blog Posts **/
+.single .written-info {
+    background-color: #ebebeb;
+    padding: 5px;
+    font-size: 14px;
+    font-size: 1.4rem;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.single .written-info .column {
+    float: left;
+    margin-right: 20px;    
+}
+.single .written-info .column a {
+    font-weight: bold;
+}
+
+.single textarea {
+    width: 100%;
+}
+
+.single #page {
+    margin-bottom: 60px;
+}
+
 @media only screen and (min-width : 480px) {
     ul.blog-visit li {
         float: left;
@@ -308,7 +336,7 @@ ul.blog-visit li .post-information div.date {
     }
 
     #testimonials {
-         padding-top: 60px;
+         padding-top: 46px;
     }
 }
 
