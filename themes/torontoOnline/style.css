@@ -310,6 +310,7 @@ ul.blog-visit li .post-information div.date {
     clear: both;
     margin-bottom: 20px;
     overflow: auto;
+    border-bottom: 1px solid #ebebeb;
 }
 
 .blog article img,
@@ -327,6 +328,12 @@ ul.blog-visit li .post-information div.date {
     float: left;
     width: 60%;
     padding-left: 20px;
+}
+
+.blog article .content-post a.read-more,
+.category article .content-post a.read-more {
+    float: right;
+    margin-top: -31px;
 }
 
 .blog article .content-post h2,

@@ -11,9 +11,8 @@
             <div class="content-post">
                 <h2><?php the_title(); ?></h2>
                 <?php the_category(); ?>
-                <a href="<?php the_permalink(); ?>">
                 <?php the_excerpt(); ?>
-                </a>
+                <a class="read-more" href="<?php the_permalink(); ?>">Read More</a>
             </div>
             
         </article>

@@ -13,6 +13,7 @@
                 <h2><?php the_title(); ?></h2>
                 <a href="<?php the_permalink(); ?>">
                 <?php the_excerpt(); ?>
+                <a class="read-more" href="<?php the_permalink(); ?>">Read More</a>
                 </a>
             </div>
             

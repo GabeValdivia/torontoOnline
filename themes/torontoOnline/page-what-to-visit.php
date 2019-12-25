@@ -40,6 +40,7 @@ get_header(); ?>
         <div class="content">
             <h2><?php the_title(); ?></h2>
             <?php the_excerpt(); ?>
+            <a class="read-more" href="<?php the_permalink(); ?>">Read More</a>
         </div>
 
         <div class="post-information">
