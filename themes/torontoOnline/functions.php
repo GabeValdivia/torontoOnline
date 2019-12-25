@@ -4,6 +4,8 @@
 
 function torontoOnline_scripts() {
     wp_enqueue_style('style', get_stylesheet_uri() );
+    wp_enqueue_script('jquery');
+    wp_enqueue_script( 'scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true );
 
 
 }
