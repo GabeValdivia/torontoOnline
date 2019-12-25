@@ -33,6 +33,7 @@ add_theme_support('post-thumbnails');
 
 //Add Custom image sizes
 add_image_size('featured', 1100, 418, true);
+add_image_size('medium-blog', 358, 208, true);
 
 // Hide WP Admin bar
 add_filter('show_admin_bar', '__return_false');

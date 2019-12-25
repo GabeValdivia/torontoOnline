@@ -181,7 +181,9 @@ h2.noimage {
 }
 
 /* Footer Styles */
-
+footer {
+    clear: both;
+}
 footer nav {
     display: none;
 }
@@ -196,8 +198,84 @@ footer p {
     font-size: 1.8rem;
 }
 
-@media only screen and (min-width : 480px) {
+/* What to Visit Page */
+ul.blog-visit li {
+    width: 100%;
+    padding: 5px;
+}
 
+ul.blog-visit li .featured {
+    position: relative;
+    margin-bottom: 0;
+}
+
+ul.blog-visit li .featured .category {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+ul.blog-visit li .featured .category a {
+    color: #fff;
+    font-size: 14px;
+    font-size: 1.4rem;
+    background-color: #a00622;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-transform: lowercase;
+}
+
+ul.blog-visit li .content {
+    padding: 10px 20px;
+    margin-top: 0 !important;
+}
+
+ul.blog-visit li .content h2 {
+    margin: 0;
+    text-align: left;
+}
+
+ul.blog-visit li .content p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+ul.blog-visit li .post-information {
+    background-color: #ebebeb;
+    padding: 5px 20px;
+    overflow: auto;
+}
+
+ul.blog-visit li .post-information p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #000000;
+}
+
+ul.blog-visit li .post-information div.author {
+    float: left;
+    width: 40%;
+    font-weight: bold;
+}
+
+ul.blog-visit li .post-information div.author span {
+    color: #a00622;
+    font-weight: bold;
+}
+
+ul.blog-visit li .post-information div.date {
+    float: right;
+    width: 40%;
+    text-align: right;  
+    font-weight: bold;
+}
+
+@media only screen and (min-width : 480px) {
+    ul.blog-visit li {
+        float: left;
+        width: calc(50% - 15px);
+    }
 }
 
 @media only screen and (min-width : 768px) {
@@ -206,12 +284,20 @@ footer p {
         margin-left: 20px;
     }
 
+    ul.blog-visit li {
+        width: calc(33.3% - 15px);
+    }
+
     /* Main Content */
     .primary {
         float: left;
         width: 70%;
         padding-right: 20px;
 
+    }
+
+    .primary.no-sidebar {
+        width: 100%;
     }
 
     .secondary {
