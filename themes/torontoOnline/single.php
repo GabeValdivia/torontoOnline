@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+
 <?php if(has_post_thumbnail() ) { ?>
     <div class="featured">
         <?php the_post_thumbnail('featured'); ?>
@@ -14,17 +15,30 @@
 
 
 
-<div id="primary" class="primary post-<?php the_ID(); ?>">
+    <div id="primary" class="primary post-<?php the_ID(); ?>">
+
     <?php while(have_posts() ): the_post(); ?>
-        
-        
+    <article>
+            <div class="written-info">
+                <div class="column">
+                    <?php the_tags(__('Tags for this post: ', 'torontoOnline'), ', ', '<br/>');?>
+                </div>
+                <div class="column">
+                    <?php _e('Category: ', 'torontoOnline') . the_category(', '); ?>
+                </div>
+                <div class="column">
+                    <?php _e('Written By: ', 'torontoOnline') . "<span>" . the_author() . "</span>" ?>
+                </div>	
+            </div>
+            <?php the_content(); ?>
 
-        <?php the_content(); ?>
+            <?php comments_template(); ?>
 
-<?php endwhile; ?>
-
-</div>
-
+        </article>
+        <?php edit_post_link(); ?>
+        <?php endwhile;?>
+    </div>
+    
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
