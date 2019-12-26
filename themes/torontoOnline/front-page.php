@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+    <!-- BxSlider Section -->
 <div id="bxslider">
     <ul class="bxslider">
         <?php $args = array(
@@ -20,6 +20,11 @@
 
         <?php endwhile; wp_reset_postdata(); ?>
     </ul>
+</div>
+
+    <!-- What to visit Section -->
+<div class="what-to-visit">
+    <?php dynamic_sidebar('front-page'); ?>
 </div>
 
 <div class="bottom-front-page">
