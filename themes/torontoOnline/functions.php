@@ -29,6 +29,16 @@ function theme_widgets(){
         'before_title' => '<h3 class="widget-title"> ',
         'after_title' => '</h3>',
     ));
+
+    register_sidebar(array(
+        'name'        => __('Image for the Front Page'),
+        'id'          => 'front-page',
+        'description' => 'Widgets for the front-page',
+        'before_widget' => '<div id="%1$s" class="widget %2$s"> ',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title"> ',
+        'after_title' => '</h3>',
+    ));
 }
 add_action('widgets_init', 'theme_widgets');
 
