@@ -419,10 +419,43 @@ ul.blog-visit li .post-information div.date {
 }
 
 /* Front Page */
+
+/* Widget Zone */
+h3.widget-title {
+    display: none;
+}
+
+.what-to-visit .widget_sp_image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.what-to-visit .widget_sp_image img {
+    margin: 0 auto;
+    display: block;
+}
+
+.what-to-visit .widget_sp_image .widget_sp_image-description {
+    padding: 0 40px;
+}
+
+/* About Us - Front Page */
 div.bottom-front-page .about-us {
     float: left;
     width: 100%;
     padding-right: 20px;
+}
+
+.what-to-visit .widget_sp_image p {
+    text-align: center;
+    background-color: #a00622;
+    border-radius: 20px;
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 div.bottom-front-page .about-us p {
@@ -437,7 +470,7 @@ div.bottom-front-page .about-us a span {
     font-weight: bold;
 }
 
-/* Latest 2 Entries - Displayed on Front Page */
+/* Latest 2 Post Entries - Displayed on Front Page */
 
 div.bottom-front-page {
     clear: both;
@@ -547,6 +580,12 @@ div.bottom-front-page li p {
     /* Contact Form - Contact Us Page */
     .wpcf7 {
         width: 60%;
+    }
+
+    /* Widget Zone Front Page */
+    .what-to-visit .widget_sp_image {
+        width: 33.33%;
+        display: inline-block;
     }
 }
 
