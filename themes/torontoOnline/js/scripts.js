@@ -1,3 +1,5 @@
-jQuery(document).ready(function(){
-    alert('jQuery Loaded!!!!!')
-});
+( function($) {
+    $('.bxslider').bxSlider({
+        mode: 'fade'
+    })
+}) (jQuery);
